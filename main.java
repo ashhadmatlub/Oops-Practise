@@ -1,24 +1,25 @@
-package Practice.Constructors;
+package Practice;
 
 public class main {
     public static void main(String[] args) {
-        Student s1 = new Student() ; 
-        System.out.println(s1);
+        try {
+            // Default
+            Square s1 = new Square();
+            System.out.println(s1);
+            System.out.println("------------");
 
-        // after setting the values manually in null constructor 
-        s1.set_Student_Info("ahmed", 2000, 203);
-        System.out.println(s1);
+            Square s2 = new Square(2.0);
+            System.out.println(s2);
+            System.out.println("-----------");
 
+            Square s3 = new Square(s2);
+            System.out.println(s3);
 
-        // PARA CONS..
-        Student s2 = new Student( "ashhad " , 2344 , 210 );
-        System.out.println(s2);
+            s3.setAllSides(4.0);
+            System.out.println(s3);
 
-        // COPY CONS ... 
-        Student s3 = new Student(s2);
-        System.out.println(s3);
-
-        s3.set_Student_Info("ali", 452, 34);
-        System.out.println(s3);
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
     }
 }
