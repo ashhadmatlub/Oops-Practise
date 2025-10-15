@@ -1,1 +1,1 @@
-THIS IS A REPOSITORY IN WHICH THERE ARE ALL THE PRACTISE SETTS OF OOP ARE AVAILABLE 
+This ia a repository in which there are some of the practice sets of OOP .
