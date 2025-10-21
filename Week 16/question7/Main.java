@@ -9,7 +9,9 @@ public class Main {
         System.out.println("f.o() = " + f.o());
 
         E e = new E() {
-
+            // it would creates an anonymous sub class because E is abstract class ( incomplete class ) so we cant access 
+            // an incomplete class so it becomes the child class of that E class and inherits the method of it and its 
+            // parents
         };
 
         System.out.println("E.m() = " + e.m());
@@ -29,3 +31,4 @@ public class Main {
         System.out.println("c.o() = " + ((F) c).o());
     }
 }
+
